@@ -1,0 +1,31 @@
+.search-block {
+  &__form {
+    position: relative;
+  }
+
+  &__input {
+    width: 344px;
+    height: 56px;
+    background-color: rgba(255,255,255,0.45);
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 40px;
+    padding: 0 20px;
+    color: #ffffff;
+    font-size: 18px;
+
+    &::placeholder {
+      color: #ffffff;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background: url("../img/search-icon.svg") center center no-repeat;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+  }
+}

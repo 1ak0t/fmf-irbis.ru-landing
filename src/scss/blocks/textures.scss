@@ -1,0 +1,56 @@
+.textures {
+  background-color: $section-dark;
+  position: relative;
+  z-index: 6;
+
+  &__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 800px;
+    padding: 70px 100px;
+    position: relative;
+  }
+
+  &__title {
+    font-size: $section-title-size;
+    line-height: 55px;
+    text-align: center;
+    margin: 0 0 75px 0;
+    text-transform: uppercase;
+  }
+
+  &__all-button {
+    border: 3px solid $contrast-color;
+    color: $contrast-color;
+    border-radius: 40px;
+    background-color: transparent;
+    line-height: 52px;
+    padding: 0 22px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  &__next,
+  &__prev {
+    display: block;
+    width: 15px;
+    height: 23px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+  }
+
+  &__next {
+    background: url("../img/millings-slider/millings-slider-next.svg");
+    right: 67px;
+  }
+
+  &__prev {
+    background: url("../img/millings-slider/millings-slider-prev.svg");
+    left: 67px;
+  }
+}

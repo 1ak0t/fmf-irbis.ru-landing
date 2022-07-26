@@ -1,0 +1,45 @@
+.counts {
+  background-color: $section-light;
+  position: relative;
+  z-index: 3;
+
+  &__wrapper {
+    display: flex;
+    list-style: none;
+    height: 160px;
+    padding: 30px 0;
+    margin: 0 auto;
+    justify-content: center;
+    color: $counts-color;
+  }
+
+  &__item {
+    width: 248px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    bottom: -150px;
+    transition: ease 500ms;
+
+    &:not(:last-child) {
+      border-right: 1px solid $counts-color;
+    }
+  }
+
+  &__number {
+    font-size: $section-title-size;
+    line-height: 48px;
+    font-weight: bold;
+    color: $counts-color;
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 112px;
+    color: $counts-color;
+  }
+}

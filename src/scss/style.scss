@@ -1,0 +1,31 @@
+@import "blocks/constants.scss";
+@import "blocks/header.scss";
+@import "blocks/top-menu.scss";
+@import "blocks/content.scss";
+@import "blocks/slider.scss";
+@import "blocks/search-block.scss";
+@import "blocks/counts.scss";
+@import "blocks/news.scss";
+@import "blocks/news-card.scss";
+@import "blocks/millings.scss";
+@import "blocks/millings-slider.scss";
+@import "blocks/decors.scss";
+@import "blocks/decors-slider.scss";
+@import "blocks/textures.scss";
+@import "blocks/textures-slider.scss";
+@import "blocks/available-textures.scss";
+@import "blocks/kit-status.scss";
+@import "blocks/patina.scss";
+@import "blocks/ask-question.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+
+* {
+  font-family: Saira, sans-serif;
+  box-sizing: border-box;
+  color: $text-color-main;
+}
+
+body {
+  margin: 0;
+}

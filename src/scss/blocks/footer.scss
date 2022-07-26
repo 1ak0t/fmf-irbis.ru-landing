@@ -1,0 +1,45 @@
+.footer {
+  background-color: $section-dark;
+
+  &__wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 100px 20px 100px;
+  }
+
+  &__block {
+    border-top: 1px solid $text-color-main;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+  }
+
+  &__social-link {
+    width: 60px;
+    height: 60px;
+
+    &--whatsapp {
+      background: url("../img/whatsapp-icon.svg");
+    }
+
+    &--instagram {
+      background: url("../img/instagram-icon.svg");
+    }
+
+    &--youtube {
+      background: url("../img/youtube-icon.svg");
+    }
+  }
+
+  &__copyright {
+    margin: 0;
+    margin-top: 50px;
+    text-align: center;
+  }
+}

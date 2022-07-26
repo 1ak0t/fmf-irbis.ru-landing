@@ -1,0 +1,82 @@
+.millings {
+  background-color: $section-dark;
+  position: relative;
+  z-index: 4;
+
+  &__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 850px;
+    padding: 70px 100px;
+    position: relative;
+  }
+
+  &__title {
+    font-size: $section-title-size;
+    line-height: 55px;
+    text-align: center;
+    margin: 0 0 37px 0;
+    text-transform: uppercase;
+  }
+  &__categories {
+    background-color: $milling-card-dark;
+    border-radius: 40px;
+    padding: 6px;
+    display: inline-flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 37px;
+  }
+
+  &__category {
+    width: 190px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 45px;
+    font-weight: 600;
+    color: #404040;
+    text-align: center;
+    border-radius: 40px;
+    cursor: pointer;
+
+    &--active {
+      background-color: #f8f7f6;
+    }
+  }
+
+  &__all-button {
+    border: 3px solid $contrast-color;
+    color: $contrast-color;
+    border-radius: 40px;
+    background-color: transparent;
+    line-height: 52px;
+    padding: 0 22px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  &__next,
+  &__prev {
+    display: block;
+    width: 15px;
+    height: 23px;
+    position: absolute;
+    top: 53%;
+    cursor: pointer;
+  }
+
+  &__next {
+    background: url("../img/millings-slider/millings-slider-next.svg");
+    right: 67px;
+  }
+
+  &__prev {
+    background: url("../img/millings-slider/millings-slider-prev.svg");
+    left: 67px;
+  }
+}

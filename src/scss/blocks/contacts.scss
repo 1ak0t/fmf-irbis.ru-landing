@@ -1,0 +1,77 @@
+.contacts {
+  background-color: $section-dark;
+
+  &__wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 70px 100px 1px 100px;
+  }
+
+  &__title {
+    font-size: $section-title-size;
+    margin: 0;
+    line-height: 40px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+  }
+
+  &__office {
+    margin-bottom: 75px;
+  }
+
+  &__office-name {
+    font-size: 20px;
+    line-height: 28px;
+    padding-left: 48px;
+    position: relative;
+    margin-bottom: 40px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 32px;
+      background: url("../img/office-icon.svg");
+      position: absolute;
+      top: 0;
+      left: -3px;
+    }
+  }
+
+  &__office-wrapper {
+    display: flex;
+    font-size: 16px;
+    position: relative;
+  }
+
+  &__contact-types {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__type {
+    width: 192px;
+    margin-bottom: 9px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    width: 552px;
+    margin-bottom: 9px;
+  }
+
+  &__map {
+    position: absolute;
+    bottom: 22px;
+    right: 0;
+    border-radius: 16px;
+
+    &--tomsk {
+      bottom: -10px;
+    }
+  }
+}

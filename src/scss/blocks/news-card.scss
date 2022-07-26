@@ -1,0 +1,25 @@
+.news-card {
+  width: 291px;
+  position: relative;
+
+  &__title {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    max-width: 250px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 28px;
+    margin: 0;
+  }
+
+  &__date {
+    font-size: 16px;
+    color: $contrast-color;
+    position: absolute;
+    bottom: 0;
+  }
+}

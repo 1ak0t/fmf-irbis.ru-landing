@@ -1,0 +1,42 @@
+.available-textures {
+  height: 401px;
+  background: url("../img/available-textures-bg.webp");
+  background-size: cover;
+  padding: 74px 0;
+
+  &__wrapper {
+    margin: 0 auto;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: $section-title-size;
+    color: $available-textures-title;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__buttons {
+    display: flex;
+    margin-top: 80px;
+  }
+
+  &__prestige,
+  &__standard {
+    border: 0;
+    background-color: $available-textures-button-bg;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 265px;
+    line-height: 60px;
+    cursor: pointer;
+  }
+
+  &__prestige {
+    margin-right: 55px;
+  }
+}

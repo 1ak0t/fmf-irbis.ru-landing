@@ -1,0 +1,47 @@
+.kit-status {
+  height: 542px;
+  background-color: $section-dark;
+
+  &__wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 80px 100px;
+  }
+
+  &__title {
+    font-size: $section-title-size;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: 16px;
+    margin-top: 50px;
+    max-width: 880px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  &__input {
+    border: 0;
+    background-color: $kit-state-input-bg;
+    height: 60px;
+    padding-left: 52px;
+  }
+
+  &__submit {
+    margin-top: 50px;
+    background-color: $text-color-main;
+    border-radius: 40px;
+    width: 265px;
+    line-height: 60px;
+    color: $milling-card-dark;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
