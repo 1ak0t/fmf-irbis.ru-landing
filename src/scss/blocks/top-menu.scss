@@ -10,9 +10,14 @@
     font-size: 18px;
     position: relative;
     cursor: pointer;
+    height: 69px;
+    display: flex;
+    align-items: center;
   }
 
   &__category--with-submenu {
+    padding: 0 37px 0 13px;
+
     &::after {
       content: '';
       background: url("../img/menu-arrow-icon.svg") center center;
@@ -20,8 +25,47 @@
       width: 18px;
       height: 18px;
       position: absolute;
-      top: 5px;
-      right: 1px;
+      top: 26px;
+      right: 9px;
     }
   }
+
+  &__category-block {
+    position: relative;
+
+    &:hover .top-menu__category {
+      background-color: $milling-card-dark;
+    }
+
+    &:hover .top-menu__submenu {
+      display: block;
+    }
+  }
+
+  &__submenu {
+    display: none;
+    width: 225px;
+    position: absolute;
+    list-style: none;
+    background-color: $milling-card-dark;
+    margin: 0;
+    padding: 8px 0;
+    top: 69px;
+  }
+
+  &__submenu-item {
+    padding: 8px 20px;
+  }
+
+  &__submenu-link {
+    color: $top-menu-link-color;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      color: $top-menu-link-color-hover;
+    }
+  }
+
+
 }
