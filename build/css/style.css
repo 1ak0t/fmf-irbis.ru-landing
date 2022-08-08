@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0 20px;
   position: relative;
 }
 .header__logo {
@@ -41,6 +41,12 @@
   font-size: 18px;
   position: relative;
   cursor: pointer;
+  height: 69px;
+  display: flex;
+  align-items: center;
+}
+.top-menu__category--with-submenu {
+  padding: 0 37px 0 13px;
 }
 .top-menu__category--with-submenu::after {
   content: "";
@@ -49,8 +55,38 @@
   width: 18px;
   height: 18px;
   position: absolute;
-  top: 5px;
-  right: 1px;
+  top: 26px;
+  right: 9px;
+}
+.top-menu__category-block {
+  position: relative;
+}
+.top-menu__category-block:hover .top-menu__category {
+  background-color: #efeeeb;
+}
+.top-menu__category-block:hover .top-menu__submenu {
+  display: block;
+}
+.top-menu__submenu {
+  display: none;
+  width: 225px;
+  position: absolute;
+  list-style: none;
+  background-color: #efeeeb;
+  margin: 0;
+  padding: 8px 0;
+  top: 69px;
+}
+.top-menu__submenu-item {
+  padding: 8px 20px;
+}
+.top-menu__submenu-link {
+  color: #7b7a91;
+  text-decoration: none;
+  display: block;
+}
+.top-menu__submenu-link:hover {
+  color: #c4c3cA;
 }
 
 .content {
@@ -77,14 +113,13 @@
 }
 .slider__img {
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transform: translateY(-20%);
 }
 .slider__pagination {
   text-align: right;
-  top: 43%;
+  bottom: 30px !important;
   right: 25px;
   padding-right: 30px;
   display: flex;

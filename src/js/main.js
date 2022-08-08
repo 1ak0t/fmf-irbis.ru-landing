@@ -1,4 +1,5 @@
 const counts = document.querySelectorAll('.counts__item');
+const topSliderBlock = document.querySelector('.slider__slides');
 const topSliderWrapper = document.querySelector('.slider__wrapper');
 const topSlider = document.querySelector('.slider');
 
@@ -8,6 +9,7 @@ const setTopSliderHeight = () => {
     const windowInnerWidth = document.documentElement.clientWidth;
     topSlider.style.height = `${windowInnerWidth*0.25}px`;
     topSliderWrapper.style.height = `${windowInnerWidth*0.25}px`;
+    topSliderBlock.style.height = `${windowInnerWidth*0.25}px`;
 }
 
 setTopSliderHeight();

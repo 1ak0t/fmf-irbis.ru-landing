@@ -21,14 +21,13 @@
 
   &__img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
     transform: translateY(-20%);
   }
 
   &__pagination {
     text-align: right;
-    top: 43%;
+    bottom: 30px!important;
     right: 25px;
     padding-right: 30px;
     display: flex;
